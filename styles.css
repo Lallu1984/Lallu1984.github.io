@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+.body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.header {
+    display: flex;
+    height: 300px;
+    flex: 100%;
+    background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
+    background-size: cover;
+    border: solid;
+}
+
+h1 {
+    font-size: 75px;
+    font-family: fantasy;
+}
+
+p {padding: 15px;}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.sidebar {
+    flex: 21%;
+    height: 1100px;
+    margin-top: 15px;
+    background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
+    background-size: cover;
+    border: solid;
+}
+
+
+
+.main {
+    flex: 70%;
+    border: solid;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.footer {
+    display: flex;
+    flex: 100%;
+    height: 300px;
+    margin-top: 15px;
+    background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
+    background-size: cover;
+    border: solid;
+}
+
+.footer img {
+    float: right;
+}
+
+
+@media (max-width: 400px) {
+    .row {
+        flex-direction: column;
+    }
+}
