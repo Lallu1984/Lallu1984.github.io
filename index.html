@@ -1,19 +1,243 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="container">
+   <!-- <div class="container"> -->
         <div class="header"> <img src="./Images/challenger-gt.png" alt="logo1"> <h1>Minu esimene koduleht</h1></div>
-    <div class="main-container">
-        <div class="sidebar"><h2 style="font-size: 35px; text-align: center;">Loengute valik</h2>
-            <div class="link1"><a href="./Lesson2/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; object-fit: contain;" src="./Images/lesson2.jpg"></a></div>
-            <div class="link2"><a href="./Lesson3/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; width: 600px; height: 300px;" src="./Images/lesson-3.jpg"></a></div>
-            <div class="link3"><a href="./Lesson4/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; width: 600px; height: 300px;" src="./Images/lesson 4.webp"></a></div>
+    <div class="kesk-container">
+        <div class="sidebar"><h2 style="font-size: 45px; text-align: center;">Loengute valik</h2>
+            <div class="link1"><a href="./Lesson2/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson2.jpg" title="Lihtsama login lehe tegemine"></a></div>
+            <div class="link2"><a href="./Lesson3/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson-3.jpg" title="CSS sissejuhatus"></a></div>
+            <div class="link3"><a href="./Lesson4/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson 4.webp" title="Flexbox võimalused"></a></div>
+            <div class="link4"><a href="./Lesson5/Advanced CSS/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/advanced-css.png" title="CSS Advanced"></a></div>
+            <div class="link5"><a href="./Lesson5/Grid/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/CSS-GRID-3.png" title="GRID võimalused"></a></div>
+            <div class="link6"><a href="./Lesson6/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson-6.jpg" title="Bootstrap võimalused"></a></div>
         </div>
-        <div class="main"><p>Lorem ipsum Consectetur unde Lorem ipsum dolor sit, amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure possimus, nihil qui vel molestiae fuga ea eius, temporibus distinctio ex, assumenda ipsa sed fugiat omnis sequi amet ducimus quia maiores dolore atque pariatur. Tempora, quaerat velit. Nesciunt sed perferendis quae? consectetur adipisicing elit. Alias ducimus possimus architecto sunt aspernatur dicta autem! Magni rem praesentium libero saepe ratione doloremque, totam a. placeat nemo voluptatem, aut libero sunt aperiam labore ullam animi voluptas, voluptates vero fugiat magni, laudantium esse dicta at alias corporis? Quas, fugit eos. Maiores ipsa, dignissimos iusto placeat odio quibusdam sunt assumenda consequatur laboriosam animi ea ullam cum at magni incidunt? Saepe fugiat incidunt repellendus ea non corporis facilis voluptate corrupti et nobis cumque inventore soluta deleniti voluptas, animi nam iure nemo a assumenda, perspiciatis aut. Animi laboriosam voluptate quas in corporis fuga quisquam voluptatum aliquam? Quia nisi commodi quod repudiandae unde enim quae ratione aperiam deserunt, natus ea temporibus porro eos necessitatibus repellendus eaque tempora ipsum. Fuga consequatur modi a adipisci incidunt voluptatibus maiores ea provident sed veritatis quod voluptatem laudantium optio eaque distinctio, iste a</p></div>
-        </div>
+            <div class="main">
+                <div class="card" style="width: auto;">
+                    <img style="height: 250px" src="./pilt11.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Autod</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="dropdown">
+                          <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Autode valik
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Porsche</a></li>
+                            <li><a class="dropdown-item" href="#">BMW</a></li>
+                            <li><a class="dropdown-item" href="#">Audi</a></li>
+                            <li><a class="dropdown-item" href="#">Fiat</a></li>
+                            <li><a class="dropdown-item" href="#">Ford</a></li>
+                            <li><a class="dropdown-item" href="#">Volvo</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Standart FORM
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card" style="width: auto;">
+                    <img style="height: 250px" src="./pilt12.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Elekter</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p>
+                            <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample">
+                              Lisainfo
+                            </button>
+                          </p>
+                          <div style="min-height: 120px;">
+                            <div class="collapse collapse-horizontal" id="collapseWidthExample2">
+                              <div class="card card-body" style="width: 300px;">
+                                Lorem ullam inventore eum? Voluptates quas amet architecto consequatur dicta nesciunt temporibus quam veniam esse perferendis consectetur nisi, eum dolorem illum quaerat doloribus excepturi nemo nihil laboriosam mollitia? Neque a repellat labore temporibus fugit eius laborum minima inventore, eligendi aliquid doloribus, porro, esse rem. Similique aperiam id modi explicabo?
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Standart FORM
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card" style="width: auto;">
+                    <img style="height: 250px" src="./pilt13.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Suusareisid</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="dropdown">
+                          <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reiside valik
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Norra</a></li>
+                            <li><a class="dropdown-item" href="#">Austria</a></li>
+                            <li><a class="dropdown-item" href="#">Soome</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Standart FORM
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="card" style="width: auto;">
+                    <img style="height: 250px" src="./pilt14.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Soojamaa reisid</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <div class="dropdown">
+                          <button class="btn btn-outline-danger dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reiside valik
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Egiptus</a></li>
+                            <li><a class="dropdown-item" href="#">Tenerife</a></li>
+                            <li><a class="dropdown-item" href="#">Kreeta</a></li>
+                            <li><a class="dropdown-item" href="#">Horvaatia</a></li>
+                            <li><a class="dropdown-item" href="#">Hawai</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Standart FORM
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                                      </div>
+                                      <div class="mb-3">
+                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                      </div>
+                                      <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                      </div>
+                                      <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
     </div>
         <div class="footer"><img src="./Images/challenger-gt.png"></div>
     </div>

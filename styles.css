@@ -1,21 +1,20 @@
-* {
-    box-sizing: border-box;
-}
-.body {
-    margin: 0;
-}
+
 
 .container {
+    flex: 100%;
     display: flex;
     flex-wrap: wrap;
 }
+
 .header {
     display: flex;
     height: 300px;
     flex: 100%;
     background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
     background-size: cover;
+    background-position: top; 
     border: solid;
+    border-radius: 5%;
 }
 
 h1 {
@@ -25,26 +24,27 @@ h1 {
 
 p {padding: 15px;}
 
-.main-container {
+.kesk-container {
     display: flex;
     flex-direction: row;
 }
 
 
 .sidebar {
-    flex: 21%;
-    height: 1100px;
+    min-width: 650px;
+    height: 950px;
     margin-top: 15px;
     background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
     background-size: cover;
     border: solid;
+    border-radius: 5%;
 }
 
 
 
 .main {
     display: flex;
-    height: 1100px;
+    height: px;
     flex: 70%;
     border: solid;
     margin-top: 15px;
@@ -59,7 +59,9 @@ p {padding: 15px;}
     margin-top: 15px;
     background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
     background-size: cover;
+    background-position: bottom;
     border: solid;
+    border-radius: 5%;
 }
 
 .footer img {
@@ -67,8 +69,8 @@ p {padding: 15px;}
 }
 
 
-@media screen and (max-width: 992px) {
-    .main-container {
+@media screen and (max-width: 1100px) {
+    .kesk-container {
         flex-direction: column;
     }
 }
@@ -93,3 +95,4 @@ p {padding: 15px;}
     }
     
 }
+

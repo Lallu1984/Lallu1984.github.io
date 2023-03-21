@@ -1,0 +1,35 @@
+.para1:hover {
+    cursor: pointer;
+}
+
+.link1:hover {
+    color: aquamarine;
+}
+
+.link1:active {
+    color: brown;
+}
+
+.link2:visited {
+    color: chartreuse;
+}
+
+.link1 {
+    text-decoration: none;
+}
+
+.para2::before {
+    content: "Testime";
+}
+
+.currency::after {
+    content: "\2605";  /* unicode sümbolid */
+}
+/* paaris elemendid */
+.testdiv > p:nth-child(2n) {
+    background-color: blueviolet;
+}
+/* paaritud elemendid */
+.testdiv > p:nth-child(2n + 1) {
+    background-color: rgb(168, 146, 188);
+}
