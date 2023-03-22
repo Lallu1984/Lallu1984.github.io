@@ -68,6 +68,9 @@ p {padding: 15px;}
     display: flex;
 }
 
+.card {
+    height: 700px;
+}
 
 @media screen and (max-width: 1100px) {
     .kesk-container {
