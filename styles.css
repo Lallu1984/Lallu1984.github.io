@@ -17,9 +17,20 @@
     border-radius: 5%;
 }
 
+.logo1 {
+    display: flex;
+    float:right
+}
+
 h1 {
     font-size: 75px;
     font-family: fantasy;
+}
+
+.addCard button {
+    display: flex;
+    width: 100%;
+
 }
 
 p {padding: 15px;}
@@ -32,7 +43,7 @@ p {padding: 15px;}
 
 .sidebar {
     min-width: 650px;
-    height: 950px;
+    height: 1300px;
     margin-top: 15px;
     background-image: url(./Images/patrick-tomasso-QMDap1TAu0g-unsplash.jpg);
     background-size: cover;
@@ -44,11 +55,22 @@ p {padding: 15px;}
 
 .main {
     display: flex;
-    height: px;
+    flex-direction: column;
+    height: 1300px;
     flex: 70%;
     border: solid;
     margin-top: 15px;
     margin-left: 15px;
+}
+
+.allcards {
+    display: flex;
+    flex-direction: row;
+}
+
+.newcards {
+    display: flex;
+    flex-direction: row;
 }
 
 .footer {
@@ -68,9 +90,6 @@ p {padding: 15px;}
     display: flex;
 }
 
-.card {
-    height: 700px;
-}
 
 @media screen and (max-width: 1100px) {
     .kesk-container {

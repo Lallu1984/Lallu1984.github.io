@@ -3,12 +3,16 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="./styles.css">
     <script src="./script.js"></script>
 </head>
 <body>
    <!-- <div class="container"> -->
-        <div class="header"> <img src="./Images/challenger-gt.png" alt="logo1"> <h1>Minu esimene koduleht</h1></div>
+        <div class="header">
+            <div class="logo1"><img src="./Images/challenger-gt.png" alt="logo1"></div>
+            <div class="Pealkiri"><h1>Minu esimene koduleht</h1></div>
+        </div>
     <div class="kesk-container">
         <div class="sidebar"><h2 style="font-size: 45px; text-align: center;">Loengute valik</h2>
             <div class="link1"><a href="./Lesson2/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson2.jpg" title="Lihtsama login lehe tegemine"></a></div>
@@ -19,8 +23,12 @@
             <div class="link6"><a href="./Lesson6/index.html"><img style="margin-top: 25px; margin-left: 15px; border: solid; border-radius: 15%; width: 600px; height: 120px;" src="./Images/lesson-6.jpg" title="Bootstrap võimalused"></a></div>
         </div>
             <div class="main">
-                <div class="card" style="width: auto;">
-                    <img style="height: 250px" src="./pilt11.jpg" class="card-img-top" alt="...">
+                <div class="tiitel"><input id="titel" style="width: 100%;" type="text" placeholder="Sisesta pealkiri"></div>
+                <div class="sisu"><input id="content" style="width: 100%;" type="text" placeholder="Sisesta kontent"></div>
+                <div class="addcard"><button id = addCard class= "btn btn-dark" onclick="addCard()"><h3>Lisa kaart</h3></button></div>
+              <div class="allcards">
+                <div class="card" style="width: auto; height: 600px;">
+                    <img style="height: 200px" src="./pilt11.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Autod</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -38,14 +46,12 @@
                           </ul>
                         </div>
                         <br>
-                        <br>
-                        <br>
                         <p>
                           Counter:
-                        <span id="value">1</span><br>
-                        <button id = add class= "button1" onclick="add(1)">+</button>
-                        <button id = min class= "button2" onclick="min(1)">-</button>
-                        <button id = reset class= "button3" onclick="reset()">reset</button>
+                        <span id="value">0</span><br>
+                        <button id = add class= "btn btn-outline-danger" onclick="add(1)">+</button>
+                        <button id = min class= "btn btn-outline-danger" onclick="min(1)">-</button>
+                        <button id = reset class= "btn btn-outline-danger" onclick="reset()">reset</button>
                         </p>
                     </div>
                         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -85,8 +91,8 @@
                             </div>
                         </div>
                 </div>
-                <div class="card" style="width: auto;">
-                    <img style="height: 250px" src="./pilt12.jpg" class="card-img-top" alt="...">
+                <div class="card" style="width: auto; height: 600px;">
+                    <img style="height: 200px" src="./pilt12.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Elekter</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -140,8 +146,8 @@
                             </div>
                         </div>
                 </div>
-                <div class="card" style="width: auto;">
-                    <img style="height: 250px" src="./pilt13.jpg" class="card-img-top" alt="...">
+                <div class="card" style="width: auto; height: 600px;">
+                    <img style="height: 200px" src="./pilt13.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Suusareisid</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -193,8 +199,8 @@
                             </div>
                         </div>
                 </div>
-                <div class="card" style="width: auto;">
-                    <img style="height: 250px" src="./pilt14.jpg" class="card-img-top" alt="...">
+                <div class="card" style="width: auto; height: 600px;">
+                    <img style="height: 200px" src="./pilt14.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Soojamaa reisid</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -248,6 +254,8 @@
                             </div>
                         </div>
                 </div>
+              </div>
+              <div style="height: 580px; width: 1300px;" class="newcards" id="new-cards"></div>
             </div>
     </div>
         <div class="footer"><img src="./Images/challenger-gt.png"></div>
