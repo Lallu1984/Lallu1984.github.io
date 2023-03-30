@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="./script.js"></script>
+    </head>
+    <body>
+        <h1 style="text-align: center;">Trips traps trull</h1>
+        <br>
+        <br>
+        <p style="text-align: center; font-size: xx-large;">Mängija: <span id="player">X</span></p>
+        <br>
+        <div style="align-items: center;" class="container">
+            <div class="row">
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(0)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(1)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(2)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(3)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(4)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(5)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+            </div>
+            <div class="row">
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(6)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(7)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+                <div class="box" style="height: 180px; width: 180px; border: solid; margin: 2px;" onclick="add1(8)" onMouseOver="mouseMotion(this, 'over');" onMouseOut="mouseMotion(this, 'out');"></div>
+            </div>
+            <div class="winner" id="winnerDiv">
+                <p style="font-size: xx-large;" id="winner"></p>
+                <input id="newGameBtn" type="button" value="Uus mäng" onclick="startNewGame();" />
+            </div>          
+        </div>
+    </body>
+</html>

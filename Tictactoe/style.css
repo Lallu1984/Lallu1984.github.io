@@ -1,0 +1,30 @@
+
+body {
+    background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+.box {
+    font-size: 150px;
+    text-align: center;
+}
+
+#newGameBtn {
+    width: 180px;
+    height: 75px;
+}
+
+.gameOver {
+    background-color: green;
+}
