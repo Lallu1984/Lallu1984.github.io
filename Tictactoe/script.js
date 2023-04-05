@@ -2,6 +2,7 @@
 var player = "X";
 var boxes = document.getElementsByClassName("box");  // Loon muutuja kastid(boxes) ja kutsun välja klassinimega("box"). Saan kõtte kõik ruudud. Tagastatakse massiivina(array). 
 var gameBoard = ["", "", "", "", "", "", "", "", ""]; // Muutju mängulaud, kus saame mängulaua salvestada ja uuendada. Sees tühjad stringid
+var gameOver = false;
 
 function mouseMotion(ref,motion){
     if(motion == 'over')
@@ -15,20 +16,21 @@ function mouseMotion(ref,motion){
     }
 
 function add1(pos) { // ruudule clikides käivitab funktsiooni onclick id-ga add1.  (pos) seotud HTML onclick funktsiooniga
-    if (gameBoard[pos].length == 0) { // Kui mängulaua valitud positsioon on tühi(length==0, ühtegi ühikut ei ole)
-        boxes[pos].innerHTML = player; // ruudu valitud positsiooni sisu asendame mängijaga
-        gameBoard[pos] = player;  // mängulaua valitud positsioon uuendame mängijaga
-        CheckWinner();  // Siin käivita funktsioon CheckWinner(siin otsi võitjat) Peab olema enne küsimust kas x või 0 mängija muutub
-        if(player == "X") {  // Küsimus: kui mängija on võrdne x-ga
-          //  boxes[pos].classList.add("boxX");  kui on x siis ruudu positsioonil anname talle classlistiga teise stiili css-s
-            player = "0"; // on võrdne x-ga ja asendab 0-ga
-        } else { // kui ei ole x
-            player = "X"; // siis mängija on uuesti x
-         //  boxes[pos].classList.add("box0");  kui on 0 siis ruudu positsioonil anname talle classlistiga teise stiili css-is
+    if(!gameOver);
+        if (gameBoard[pos].length == 0) { // Kui mängulaua valitud positsioon on tühi(length==0, ühtegi ühikut ei ole)
+            boxes[pos].innerHTML = player; // ruudu valitud positsiooni sisu asendame mängijaga
+            gameBoard[pos] = player;  // mängulaua valitud positsioon uuendame mängijaga
+            CheckWinner();  // Siin käivita funktsioon CheckWinner(siin otsi võitjat) Peab olema enne küsimust kas x või 0 mängija muutub
+            if(player == "X") {  // Küsimus: kui mängija on võrdne x-ga
+            //  boxes[pos].classList.add("boxX");  kui on x siis ruudu positsioonil anname talle classlistiga teise stiili css-s
+                player = "0"; // on võrdne x-ga ja asendab 0-ga
+            } else { // kui ei ole x
+                player = "X"; // siis mängija on uuesti x
+            //  boxes[pos].classList.add("box0");  kui on 0 siis ruudu positsioonil anname talle classlistiga teise stiili css-is
 
-    }
-        
-    document.getElementById("player").innerHTML = player; // Muudame mängija siin kas x-ks või 0ks
+        }
+            
+        document.getElementById("player").innerHTML = player; // Muudame mängija siin kas x-ks või 0ks
     }
 }
 
@@ -70,13 +72,14 @@ function WinnerIs(winner, pos1, pos2, pos3) { // funktsioon võitja on (võitja 
     boxes[pos1].classList.add("gameOver"); // kasti positsioonil anname talle  uue style taustavärvi
     boxes[pos2].classList.add("gameOver");
     boxes[pos3].classList.add("gameOver");
-    
+    gameOver = true;
 }
     
 
 function NoWinner() {
     document.getElementById("winner").innerHTML = "JÄITE VIIKI!!!";
     document.getElementById("winnerDiv").style.display = "block";
+    gameOver = true;
 }
 
 function startNewGame(){
