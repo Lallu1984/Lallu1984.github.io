@@ -80,8 +80,8 @@ function App()  {
         <div className="card bg-dark text-white" data-index="3">Kunksmoor</div>
         <div className="card bg-dark text-white" data-index="4">Hõbevalge</div>
       </div>
-      
-      <div id='result'>
+      <Cards />
+      <div className='result'>
       <Cards />
       <div className="over-menu active" data-index="0">
             <div className="book-content"><img src={pilt6} alt="Kevade" />
